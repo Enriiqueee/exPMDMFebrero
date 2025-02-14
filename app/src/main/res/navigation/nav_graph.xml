@@ -7,7 +7,6 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="Activyti"
         android:label="Main Fragment"
         tools:layout="@layout/activity_main" >
         <action
@@ -17,7 +16,6 @@
 
     <fragment
         android:id="@+id/albumFragment"
-        android:name="com.example.expmdmfebrero.AlbumFragment"
         android:label="Album Fragment"
         tools:layout="@layout/activity_album_fragment" >
         <action
