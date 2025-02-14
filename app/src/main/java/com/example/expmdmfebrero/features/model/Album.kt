@@ -1,6 +1,6 @@
 package com.example.expmdmfebrero.features.model
 
-class Album (
+data class Album (
     val name : String,
     val creationDate : String,
     val description : String,

@@ -13,17 +13,17 @@ class AlbumViewModel(private val albumToggleFavoriteUseCase: AlbumToggleFavorite
 
     private val _albums = MutableLiveData<List<Album>>()
     val albums: LiveData<List<Album>> get() = _albums
-
-    fun loadAlbums() {
-        viewModelScope.launch {
-            _albums.value = AlbumDataRepository().getAlbum()
-        }
-    }
-
-    fun toggleFavorite(album: Album) {
-        viewModelScope.launch {
-            albumToggleFavoriteUseCase.invoke(album)
-            _albums.value = _albums.value
-        }
-    }
+//
+//    fun loadAlbums() {
+//        viewModelScope.launch {
+//            _albums.value = AlbumDataRepository().getAlbum()
+//        }
+//    }
+//
+//    fun toggleFavorite(album: Album) {
+//        viewModelScope.launch {
+//            albumToggleFavoriteUseCase.invoke(album)
+//            _albums.value = _albums.value
+//        }
+//    }
 }
